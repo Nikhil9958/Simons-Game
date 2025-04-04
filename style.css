@@ -1,6 +1,10 @@
 body{
     text-align: center;
 }
+a{
+    color: hotpink;
+    text-decoration: none;
+}
 
 .container{
     display: inline-block;
@@ -15,8 +19,8 @@ body{
     margin-bottom: 2%;
 }
 .box1{
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
     border: 5px solid black;
     background-color: red;
     border-radius: 20%;
@@ -24,16 +28,16 @@ body{
 }
 
 .box2{
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
     border: 5px solid black;
     background-color: blue;
     border-radius: 20%;
 }
 
 .box3{
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
     border: 5px solid black;
     background-color: orange;
     border-radius: 20%;
@@ -41,8 +45,8 @@ body{
 }
 
 .box4{
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
     border: 5px solid black;
     background-color: violet;
     border-radius: 20%;
