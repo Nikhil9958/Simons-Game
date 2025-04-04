@@ -101,7 +101,7 @@ function checkColor(userSeqLength){
                 body.classList.remove('failed')
             },200);
 
-            heading.innerText = `Game Over, Max Score: ${level}, Press any key to start again`;
+            heading.innerText = `Game Over, Max Score: ${level}, refresh to restart the game`;
             reset();
         }
     }
