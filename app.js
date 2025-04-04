@@ -6,6 +6,7 @@ let started = false;
 
 
 //stop propagation
+let body = document.querySelector("body");
 let container = document.querySelector('.container'); 
 let upper = document.querySelector('.upper');
 let lower = document.querySelector('.lower');
@@ -88,8 +89,21 @@ function checkColor(userSeqLength){
             }
         }
         else{
-            heading.innerText = `Game Over, Max Score: ${level}`;
-            // break;
+            body.classList.add('failed');
+            setTimeout(()=>{
+                body.classList.remove('failed')
+            },200);
+
+            heading.innerText = `Game Over, Max Score: ${level}, Press any key to start again`;
+            reset();
         }
     }
+}
+
+
+function reset (){
+    started = false;
+    gameSeq = [];
+    userSeq = [];
+    level = 0;
 }
