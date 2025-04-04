@@ -31,6 +31,13 @@ let boxes = [box1,box2,box3,box4];
 let heading = document.querySelector('.level');
 
 
+heading.addEventListener("click",function(){
+    if(started==false){
+        console.log("game started");
+        started=true;
+        levelUp();
+    }
+})
 
 document.addEventListener("keypress",function(){
     if(started==false){
