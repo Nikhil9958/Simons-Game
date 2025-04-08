@@ -82,10 +82,10 @@ function boxPress(box){   //for user input
 }
 
 function checkColor(userSeqLength){
-    for(let idx = 0;idx<userSeqLength;idx++){
+    // for(let idx = 0;idx<userSeqLength;idx++){
         // console.log("lvel:",level," ",userSeqLength)
         // console.log("gameSeqColor:",gameSeq," ",userSeq);
-        console.log(idx)
+        idx = userSeqLength -1;
         if(gameSeq[idx]===userSeq[idx]){
             if(idx==level-1){
                 console.log("levelUp Called")
@@ -104,7 +104,7 @@ function checkColor(userSeqLength){
             heading.innerText = `Game Over, Max Score: ${level}, refresh to restart the game`;
             reset();
         }
-    }
+    // }
 }
 
 
